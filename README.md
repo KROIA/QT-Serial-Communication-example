@@ -15,7 +15,7 @@ The code for that is in the **Device-code** folder
 ***
 
 ## Building
-# Standallone?
+# Standalone?
 * **NO** Because I use the free Version of QT, there you have to put all needed **.dll** files to the **.exe**.  
 In the **Compiled** folder, you can find all needed **.dll** files for the program. You can find these in your QT install folder.  
 C:\Qt\5.10.1\mingw53_32\bin  
