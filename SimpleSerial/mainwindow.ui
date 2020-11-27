@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>742</width>
+    <height>604</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -40,8 +40,8 @@
    <widget class="QPushButton" name="disconnect_button">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>40</y>
+      <x>360</x>
+      <y>10</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -50,14 +50,24 @@
      <string>disconnect</string>
     </property>
    </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>221</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
-     <height>21</height>
+     <width>742</width>
+     <height>20</height>
     </rect>
    </property>
   </widget>
