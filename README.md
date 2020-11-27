@@ -1,9 +1,9 @@
 # Installation
 ***
 ## QT-Software
-1. Download the Repository.
-2. Extract the Files somewhere but let the file structure the same.
-3. Open QT-Creator and open the Project by Browsering to the extractet .pro file.
+1. Download the repository.
+2. Extract the files somewhere but let the file structure the same.
+3. Open QT-Creator and open the project by browsering to the extractet .pro file.
 4. I usually compile with **MinGW** so check if you have that or try other compilers.
 5. Compile the code.
 6. The example uses only qDebug() outputs for displaying any data  
@@ -25,5 +25,3 @@ The folder **platforms** is allso needed.
 The **.dll** in there you can find  
 E:\Qt\5.10.1\mingw53_32\plugins\platforms  
 
-## Questions?
-* Then contact my. (if you can)
