@@ -33,6 +33,7 @@ class MainWindow : public QMainWindow
 
         Ui::MainWindow *ui;
 
+        qint32 baudrate;
         QSerialPort *usbDevice;
         std::vector<QSerialPortInfo> serialComPortList; //A list of the available ports for the dropdownmenue in the GUI
 

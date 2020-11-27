@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent) :
     usbDevice = new QSerialPort(this);
     connect(usbDevice,SIGNAL(readyRead()),this,SLOT(onSerialDataAvailable()));
 
+    baudrate = QSerialPort::Baud115200;
+
     serialDeviceIsConnected = false;
     getAvalilableSerialDevices();
 }
@@ -17,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete usbDevice;
 }
 void MainWindow::getAvalilableSerialDevices()
 {
@@ -97,7 +100,7 @@ void MainWindow::on_connect_button_clicked()
         if(usbDevice->open(QIODevice::ReadWrite))
         {
             //Now the serial port is open try to set configuration
-            if(!usbDevice->setBaudRate(QSerialPort::Baud115200))        //Depends on your boud-rate on the Device
+            if(!usbDevice->setBaudRate(baudrate))        //Depends on your boud-rate on the Device
                 qDebug()<<usbDevice->errorString();
 
             if(!usbDevice->setDataBits(QSerialPort::Data8))
